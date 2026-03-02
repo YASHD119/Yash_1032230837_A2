@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 40px;
+}
+
+.resume {
+  max-width: 900px;
+  background: #ffffff;
+  margin: auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: #fff;
+  margin-bottom: 35px;
+}
+
+header h1 {
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 18px;
+  opacity: 0.95;
+  margin: 8px 0 15px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+.contact span {
+  background: rgba(255,255,255,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #185a9d;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  border-radius: 4px;
+}
+
+.item {
+  background: #f9fbff;
+  padding: 15px 18px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border-left: 5px solid #43cea2;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.item h3 {
+  font-size: 17px;
+  color: #222;
+}
+
+.item p,
+.item span {
+  font-size: 14px;
+  color: #555;
+}
+
+.date {
+  font-size: 13px;
+  color: #888;
+}
+
+ul {
+  margin-left: 18px;
+  margin-top: 8px;
+}
+
+ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid li {
+  list-style: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .resume {
+    padding: 25px;
+  }
+}
